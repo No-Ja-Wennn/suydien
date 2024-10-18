@@ -1,0 +1,151 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    max-width: 1200px;
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    margin: 8px;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+    font-size: 16px;
+}
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    margin: 0;
+}
+#result {
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ff5733; /* Màu đỏ cho kết quả */
+    font-weight: 600;
+    /* text-decoration: underline; */
+}
+.rules {
+    /* margin-top: 20px; */
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+.rules h2{
+    text-decoration: underline;
+}
+
+#rulesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none; /* Xóa dấu chấm đầu dòng */
+    padding: 0; /* Xóa khoảng cách padding */
+}
+.rulesList__item {
+    width: calc(100% / 5 - 10px);
+    margin-bottom: 10px; /* Khoảng cách giữa các quy tắc */
+    background-color: #ffffff; /* Màu nền cho các quy tắc */
+    border: 1px solid #ccc; /* Đường viền */
+    border-radius: 4px; /* Bo góc */
+    padding: 10px; /* Khoảng cách bên trong */
+    transition: transform 0.3s; /* Hiệu ứng khi hover */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.rules li:hover {
+    transform: scale(1.02); /* Tăng kích thước nhẹ khi hover */
+    background-color: #d1d1d1; /* Thay đổi màu nền khi hover */
+}
+.rule-if, .rule-then {
+    margin: 0;
+    padding: 5px 0;
+}
+.rule-if {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.rule-then {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.wrapper{
+    max-width: 800px;
+    width: 100%;
+}
+
+.bottom-action{
+    position: fixed;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    bottom: 0;
+    border-top: 2px solid #ddd;
+    padding: 20px;
+
+}
+
+.if{
+    display: flex;
+}
+
+.if__item{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4px;font-size: 14px;
+    margin-left: 16px;
+    padding: 0;
+}

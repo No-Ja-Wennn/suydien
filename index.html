@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chẩn đoán bệnh viêm họng</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Chẩn đoán bệnh viêm họng</h1>
+        <div class="rules">
+            <h2>Quy tắc chẩn đoán</h2>
+            <ul id="rulesList"></ul>
+        </div>
+        <div class="bottom-action">
+            <label for="symptoms">Nhập triệu chứng (cách nhau bởi dấu phẩy):</label>
+            <div class="wrapper">
+                <input type="text" id="symptoms" placeholder="Ví dụ: viêm họng, ho, sốt, sốt cao">
+                <button id="diagnose">Chẩn đoán</button>
+            </div>
+            <p id="result">Không tìm thấy chẩn đoán.</p>
+        </div>
+    </div>
+    <script src="./inference.js"></script>
+</body>
+</html>
